@@ -9,7 +9,7 @@
 nav {
     background-color: white;
     color: black;
-    padding: 10px;
+    padding: 0.625rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,10 +18,9 @@ nav {
 nav .logo {
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-/* Remove underline from all links in the navbar */
 nav a {
     text-decoration: none;
 }
@@ -29,7 +28,7 @@ nav a {
 nav .logo .logo_text {
     color: black;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
 }
 
 nav .logo .icon {
@@ -44,9 +43,9 @@ nav .dropdown {
 nav .dropdown .dropbtn {
     background-color: white;
     color: black;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
 }
 
@@ -57,9 +56,9 @@ nav .dropdown .dropbtn:hover {
 nav .dropdown .links {
     background-color: white;
     color: black;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
 }
 
@@ -69,16 +68,16 @@ nav .dropdown .links:hover {
 
 nav .buttons {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     align-items: center;
 }
 
 nav .buttons .buynow {
     background-color: #d85151;
     color: white;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     cursor: pointer;
 }
 
@@ -88,13 +87,13 @@ nav .buttons .buynow:hover {
 
 nav .buttons .buynowtext {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
 }
 
 nav .buttons .buyicon {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
     color: white;
     vertical-align: middle;
 }
@@ -105,45 +104,45 @@ header {
     background-color: #3d7a81;
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 25rem;
     width: 100%;
     text-align: center;
 }
 
 header h1 {
     color: white;
-    font-size: 53px;
+    font-size: 3.3125rem;
     font-weight: bold;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 header form {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    max-width: 600px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
+    max-width: 37.5rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    padding: 0.625rem;
     background-color: white;
     display: flex;
 }
 
 header form input[type="text"] {
-    padding: 10px;
+    padding: 0.625rem;
     border: none;
-    border-radius: 5px;
-    margin-right: 10px;
+    border-radius: 0.3125rem;
+    margin-right: 0.625rem;
 }
 
 header form button[type="submit"] {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: #d85151;
     color: white;
     cursor: pointer;
@@ -155,56 +154,53 @@ header form button[type="submit"]:hover {
 
 header form .searchicon {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
     vertical-align: middle;
 }
 
 header form .zipicon {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
     vertical-align: middle;
 }
 
 header .headerbuttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 header .headerbuttons button {
-    border-radius: 20px;
+    border-radius: 1.25rem;
     background-color: #3d7a81;
     color: white;
-    border: 1px solid white;
-    padding: 10px;
+    border: 0.0625rem solid white;
+    padding: 0.625rem;
 }
 
 header .headerbuttons button:hover {
     background-color: white;
     color: black;
-    border: 1px solid #2b5a63;
+    border: 0.0625rem solid #2b5a63;
 }
-/* main {
-    padding: 40px;
-} */
-/* Services Section */
 
+/* Services Section */
 main .services {
-    padding: 40px;
+    padding: 2.5rem;
 }
 main .services .head {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 main .services .head a {
     text-decoration: none;
     color: black;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 main .services .head a:hover {
@@ -214,22 +210,22 @@ main .services .head a:hover {
 main .services .all-services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px 80px;
+    gap: 1.25rem 5rem;
 }
 
 main .services .all-services .item {
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 main .services .all-services .item .icon {
     background-color: #f0f0f0;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    padding: 10px;
+    padding: 0.625rem;
     flex-shrink: 0;
 }
 
@@ -242,7 +238,7 @@ main .services .all-services a {
     color: black;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 main .services .all-services a:hover {
@@ -253,9 +249,9 @@ main .services .all-services a:hover {
 --------------------------------------------- */
 .popular-projects {
     display: flex;
-    padding: 60px 40px;
+    padding: 3.75rem 2.5rem;
     background-color: #fff;
-    gap: 60px;
+    gap: 3.75rem;
     align-items: center;
 }
 .popular-projects a {
@@ -265,23 +261,23 @@ main .services .all-services a:hover {
 
 .promo-card {
     background-color: #f8f9fa;
-    padding: 40px;
-    border-radius: 12px;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
     flex-basis: 35%;
     flex-shrink: 0;
 }
 
 .promo-card h2 {
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 1.2;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-weight: 600;
 }
 
 .promo-card p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #6c757d;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .promo-card img {
@@ -297,11 +293,11 @@ main .services .all-services a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .projects-header h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -317,7 +313,7 @@ main .services .all-services a:hover {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .projects-grid a {
@@ -332,13 +328,13 @@ main .services .all-services a:hover {
 .project-item {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .project-item img {
-    width: 80px;
-    height: 60px;
-    border-radius: 8px;
+    width: 5rem;
+    height: 3.75rem;
+    border-radius: 0.5rem;
     object-fit: cover;
 }
 
@@ -349,47 +345,47 @@ main .services .all-services a:hover {
 }
 
 .project-info h4 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    margin: 0 0 4px 0;
+    margin: 0 0 0.25rem 0;
 }
 
 .project-rating,
 .project-price {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6c757d;
 }
 
 .project-rating {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .project-rating .star {
     color: #ffb400;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* Home Projects Section
 --------------------------------------------- */
 .home-projects {
-    padding: 60px 40px;
+    padding: 3.75rem 2.5rem;
     background-color: #fff;
-    border-top: 1px solid #eee;
+    border-top: 0.0625rem solid #eee;
 }
 
 .home-projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .project-card {
     display: flex;
     flex-direction: column;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    border: 0.0625rem solid #e0e0e0;
+    border-radius: 0.75rem;
     overflow: hidden;
     text-decoration: none;
     color: inherit;
@@ -398,8 +394,8 @@ main .services .all-services a:hover {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-0.3125rem);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.1);
 }
 
 .card-image-container {
@@ -421,37 +417,37 @@ main .services .all-services a:hover {
 
 .card-image-container h4 {
     position: absolute;
-    bottom: 16px;
-    left: 16px;
-    right: 16px;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
     color: white;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     margin: 0;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: 0.0625rem 0.0625rem 0.1875rem rgba(0, 0, 0, 0.6);
 }
 
 .card-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 1rem;
 }
 
 .card-details {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6c757d;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .card-button {
-    border: 1px solid #ccc;
-    padding: 8px 16px;
-    border-radius: 6px;
+    border: 0.0625rem solid #ccc;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #333;
     white-space: nowrap;
     transition: all 0.2s ease-in-out;
@@ -466,30 +462,30 @@ main .services .all-services a:hover {
 /* Expert Advice Section
 --------------------------------------------- */
 .expert-advice {
-    padding: 60px 40px;
+    padding: 3.75rem 2.5rem;
     background-color: #f8f9fa;
-    border-top: 1px solid #eee;
+    border-top: 0.0625rem solid #eee;
     width: 100%;
 }
 
 .advice-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 32px;
+    gap: 2rem;
 }
 
 .advice-card {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     text-decoration: none;
     color: inherit;
 }
 
 .advice-card img {
-    width: 140px;
-    height: 140px;
-    border-radius: 12px;
+    width: 8.75rem;
+    height: 8.75rem;
+    border-radius: 0.75rem;
     object-fit: cover;
     flex-shrink: 0;
 }
@@ -500,14 +496,14 @@ main .services .all-services a:hover {
 }
 
 .advice-category {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #6c757d;
     font-weight: 500;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
 }
 
 .advice-content h4 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     color: #212529;
     margin: 0;
@@ -525,23 +521,23 @@ main .services .all-services a:hover {
 }
 
 .advice-content p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6c757d;
     line-height: 1.5;
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 .advice-date {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #6c757d;
 }
 
 /* How It Works Section
 --------------------------------------------- */
 .how-it-works {
-    padding: 80px 40px;
+    padding: 5rem 2.5rem;
     background-color: #fff;
-    border-top: 1px solid #eee;
+    border-top: 0.0625rem solid #eee;
     text-align: left;
     position: relative;
     width: 100%;
@@ -549,19 +545,19 @@ main .services .all-services a:hover {
 }
 
 .section-intro {
-    max-width: 1000px;
-    margin: 0 auto 50px auto;
+    max-width: 62.5rem;
+    margin: 0 auto 3.125rem auto;
 }
 
 .section-intro h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     color: black;
 }
 
 .section-intro p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #6c757d;
     line-height: 1.6;
 }
@@ -569,13 +565,13 @@ main .services .all-services a:hover {
 .steps-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    max-width: 1000px;
+    gap: 2rem;
+    max-width: 62.5rem;
     margin: 0 auto;
 }
 
 .step-icon {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .step-icon svg {
@@ -583,14 +579,14 @@ main .services .all-services a:hover {
 }
 
 .step-item h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     color: black;
 }
 
 .step-item p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #6c757d;
     line-height: 1.5;
 }
@@ -602,12 +598,12 @@ main .services .all-services a:hover {
     width: 100%;
     display: block;
     align-items: center;
-    min-height: 480px;
+    min-height: 30rem;
 }
 .cta-section {
     width: 100%;
     display: flex;
-    min-height: 480px;
+    min-height: 30rem;
     background-color: #3D7A81; 
     color: #fff;
     position: absolute;
@@ -615,7 +611,7 @@ main .services .all-services a:hover {
 
 .cta-content {
     flex-basis: 50%;
-    padding: 60px;
+    padding: 3.75rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -629,29 +625,29 @@ main .services .all-services a:hover {
 }
 
 .cta-content h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.4; 
-    margin: 0 0 32px 0;
-    max-width: 500px;
+    margin: 0 0 2rem 0;
+    max-width: 31.25rem;
 }
 
 .cta-buttons {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .cta-buttons .btn {
-    padding: 12px 24px;
-    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid transparent;
+    border: 0.0625rem solid transparent;
     transition: all 0.2s ease-in-out;
 }
 
@@ -682,8 +678,8 @@ main .services .all-services a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 164px;
-    height: 164px;
+    width: 10.25rem;
+    height: 10.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -699,8 +695,8 @@ main .services .all-services a:hover {
 }
 
 .spinning-text {
-    width: 144px;
-    height: 144px;
+    width: 9rem;
+    height: 9rem;
     animation: spin 22s linear infinite;
 }
 
@@ -716,21 +712,21 @@ main .services .all-services a:hover {
     height: 100%;
     top: 0;
     left: 0;
-    border: 2px solid white;
+    border: 0.125rem solid white;
 }
 
 .circle-border-inner {
-    width: 87px;
-    height: 87px;
+    width: 5.4375rem;
+    height: 5.4375rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid white;
+    border: 0.125rem solid white;
 }
 
 .circle-dot-center {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -740,7 +736,7 @@ main .services .all-services a:hover {
 /* Get App Section
 --------------------------------------------- */
 .get-app-section {
-    padding: 80px 40px; 
+    padding: 5rem 2.5rem; 
 }
 
 .get-app-container {
@@ -748,38 +744,38 @@ main .services .all-services a:hover {
     align-items: center;
     justify-content: space-between;
     background-color: #FBEEEE;
-    border-radius: 16px;
-    padding: 0 0 0 60px;
+    border-radius: 1rem;
+    padding: 0 0 0 3.75rem;
     overflow: hidden;
 }
 
 .app-info h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 600;
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     color: #212529;
 }
 
 .app-info p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #6c757d;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .app-store-buttons {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .app-store-btn {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     background-color: #1a1a1a;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 8px;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.5rem;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.2s ease-in-out;
@@ -790,27 +786,27 @@ main .services .all-services a:hover {
 }
 
 .app-store-btn svg {
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     fill: #fff;
 }
 
 .app-image img {
-    max-width: 500px; 
+    max-width: 31.25rem; 
     display: block;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 62rem) {
     .get-app-container {
         flex-direction: column;
-        padding: 40px;
+        padding: 2.5rem;
         text-align: center;
     }
     .app-store-buttons {
         justify-content: center;
     }
     .app-image {
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
     .app-image img {
         max-width: 100%;
@@ -820,30 +816,30 @@ main .services .all-services a:hover {
 /* Pricing References Section
 --------------------------------------------- */
 .pricing-references {
-    padding: 0px 40px 80px 40px;
+    padding: 0 2.5rem 5rem 2.5rem;
     background-color: #fff;
 }
 
 .pricing-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .pricing-card {
     display: flex;
-    border: 1px solid #e9ecef;
-    border-radius: 12px;
+    border: 0.0625rem solid #e9ecef;
+    border-radius: 0.75rem;
     overflow: hidden;
     transition: box-shadow 0.2s ease-in-out;
 }
 
 .pricing-card:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.08);
 }
 
 .pricing-card img {
-    width: 180px;
+    width: 11.25rem;
     height: auto;
     object-fit: cover;
     flex-shrink: 0;
@@ -855,7 +851,7 @@ main .services .all-services a:hover {
 }
 
 .pricing-content {
-    padding: 20px;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -863,9 +859,9 @@ main .services .all-services a:hover {
 }
 
 .pricing-content h3 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    margin: 0 0 10px 0;
+    margin: 0 0 0.625rem 0;
     color: #212529;
 }
 
@@ -873,28 +869,28 @@ main .services .all-services a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #6c757d;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .pricing-details .rating {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 0.25rem;
 }
 
 .pricing-details .star {
     color: #ffb400;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .btn-book {
-    border: 1px solid #ced4da;
-    padding: 8px 16px;
-    border-radius: 6px;
+    border: 0.0625rem solid #ced4da;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #343a40;
     text-decoration: none;
     align-self: flex-start;
@@ -912,7 +908,7 @@ main .services .all-services a:hover {
 footer {
     background-color: #111827;
     color: #fff;
-    padding: 60px 40px;
+    padding: 3.75rem 2.5rem;
 }
 
 footer .footer-top{
@@ -920,32 +916,32 @@ footer .footer-top{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 0 40px 40px ;
+    padding: 0 2.5rem 2.5rem ;
 }
 
 footer .footer-top .logo {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 footer .footer-top .logo i{
     color: #fff; 
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 footer .footer-top .logo span {
     color: #fff;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 0 0.625rem;
 }
 
 footer .footer-top .logo button {
     background-color: #D85151;
     color: #fff;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     cursor: pointer;
 }
 
@@ -955,12 +951,12 @@ footer .footer-top .logo button:hover {
 
 footer .footer-top .help span {
     color: #ccc;
-    padding-right: 20px;
+    padding-right: 1.25rem;
 }
 
 footer .footer-top .help a {
     color: #FFF;
-    padding-right: 10px;
+    padding-right: 0.625rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -970,8 +966,8 @@ footer .footer-top .help a:hover {
 }
 
 footer .footer-links {
-    padding: 40px;
-    border-top: lightgray 1px solid;
+    padding: 2.5rem;
+    border-top: lightgray 0.0625rem solid;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -983,8 +979,8 @@ footer .footer-links .left-side {
 footer .footer-links .left-side .logo {
     display: flex;
     align-items: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 footer .footer-links .left-side .logo a {
@@ -994,7 +990,7 @@ footer .footer-links .left-side .logo a {
 footer .footer-links .left-side .logo .logo_text {
     color: white;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
 }
 
 footer .footer-links .left-side .logo .icon {
@@ -1004,18 +1000,18 @@ footer .footer-links .left-side .logo .icon {
 
 footer .footer-links .left-side p {
     color: #ccc;
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 1.25rem;
+    font-size: 0.875rem;
 }
 
 footer .footer-links .left-side .social-icons {
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem;
 }
 
 footer .footer-links .left-side .social-icons .logo i{
-    width: 15px;
-    height: 15px;
+    width: 0.9375rem;
+    height: 0.9375rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1024,7 +1020,7 @@ footer .footer-links .left-side .social-icons .logo i{
 footer .footer-links .left-side .social-icons .logo{
     color: #fff;
     border-radius: 50%;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: rgba(125, 123, 123, 0.361);
     text-decoration: none;
 }
@@ -1035,14 +1031,14 @@ footer .footer-links .left-side .social-icons .logo:hover{
 footer .footer-links .right-side {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 footer .footer-links .right-side .list1,
 footer .footer-links .right-side .list2 {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875rem;
 
 }
 
@@ -1053,15 +1049,15 @@ footer .footer-links .right-side .list2 ul {
     max-height: calc(6 * 1.5em); 
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.3125rem;
     flex-wrap: wrap;
 }
 
 footer .footer-links .right-side a{
     text-decoration: none;
     color: #ccc;
-    padding-right: 30px;
-    font-size: 14px;
+    padding-right: 1.875rem;
+    font-size: 0.875rem;
 
 }
 
@@ -1072,30 +1068,30 @@ footer .footer-links .right-side a:hover {
 
 footer .footer-cities {
     text-align: left;
-    padding: 20px 0;
-    font-size: 14px;
+    padding: 1.25rem 0;
+    font-size: 0.875rem;
     color: #ccc;
     display: flex;
     align-items: center;
 }
 
 footer .footer-cities h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
 footer .footer-cities ul {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     list-style: none;
     justify-content:space-evenly ;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
 
 footer .footer-cities ul li {
-    padding: 10px;
-    border: rgb(68, 67, 67) 1px solid;
-    border-radius: 20px;
+    padding: 0.625rem;
+    border: rgb(68, 67, 67) 0.0625rem solid;
+    border-radius: 1.25rem;
 }
 
 footer .footer-cities ul li a {
@@ -1126,5 +1122,99 @@ footer .footer-bottom a:hover {
 
 footer .footer-bottom div {
     display: flex;
-    gap: 15px;
+    gap: 0.9375rem;
+}
+
+/* Floating Buttons
+--------------------------------------------- */
+
+/* Keyframe animations */
+@keyframes slide-in-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from { transform: translateY(0); }
+    to { transform: translateY(-0.25rem); }
+}
+
+.floating-buttons {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1050;
+    display: flex;
+    flex-direction: column; /* Stacks the buttons vertically */
+    gap: 0.5rem;
+}
+
+
+/* Base style for the vertical buttons */
+.floating-buttons a {
+    writing-mode: vertical-rl; 
+    text-orientation: mixed;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.75rem ;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+/* Styles for the icons inside the buttons */
+.floating-buttons a svg,
+.floating-buttons a i {
+    transform: rotate(-90deg); /* Counter-rotates the icons to be upright */
+    width: 0..875rem; 
+    height: 0.875rem;
+}
+
+/* "Scroll to Top" Button */
+.btn-scroll-top {
+    background-color: #fff;
+    border: 0.0625rem solid #dee2e6;
+    color: #212529;
+    padding-right: 0.875rem;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-scroll-top .icon-arrow {
+    margin-left: 0.25rem;
+    transition: transform 0.2s ease-out;
+}
+
+.btn-scroll-top:hover .icon-arrow {
+    animation: slide-up 0.3s ease-out forwards;
+}
+
+/* "Customize" Button */
+.btn-customize {
+    background-color: #fff;
+    border: 0.0625rem solid #6c757d;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 0.05rem;
+    padding-right: 0.8rem;
+}
+
+.btn-customize .icon-settings {
+    margin-left: 0.25rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn-customize:hover .icon-settings {
+    transform: rotate(180deg);
 }
