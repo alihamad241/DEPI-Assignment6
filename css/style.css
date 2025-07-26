@@ -1140,6 +1140,11 @@ footer .footer-bottom div {
     }
 }
 
+@keyframes rotate-cw {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 @keyframes slide-up {
     from { transform: translateY(0); }
     to { transform: translateY(-0.25rem); }
@@ -1148,45 +1153,51 @@ footer .footer-bottom div {
 .floating-buttons {
     position: fixed;
     top: 50%;
-    right: 0;
+    right: 0; 
+    padding: 0.5rem;
     transform: translateY(-50%);
-    z-index: 1050;
+    z-index: 1050; 
     display: flex;
-    flex-direction: column; /* Stacks the buttons vertically */
-    gap: 0.5rem;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.75rem;
+    animation: slide-in-right 0.5s ease-out forwards;
 }
 
-
-/* Base style for the vertical buttons */
 .floating-buttons a {
-    writing-mode: vertical-rl; 
-    text-orientation: mixed;
-    text-align: center;
-    padding: 0.5rem;
-    border-radius: 0.75rem ;
+    writing-mode: vertical-rl;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem; 
+    border-radius: 50rem; 
     box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
     text-decoration: none;
+    font-size: 0.5rem; 
     font-weight: 500;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    white-space: nowrap;
 }
 
-
-/* Styles for the icons inside the buttons */
-.floating-buttons a svg,
 .floating-buttons a i {
-    transform: rotate(-90deg); /* Counter-rotates the icons to be upright */
-    width: 0..875rem; 
-    height: 0.875rem;
+    width: 0.875rem; 
+    height: 0.875rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* "Scroll to Top" Button */
+.floating-buttons a .txt {
+    margin-left: 0.25rem;
+}
+
 .btn-scroll-top {
     background-color: #fff;
-    border: 0.0625rem solid #dee2e6;
-    color: #212529;
-    padding-right: 0.875rem;
+    border: 0.0625rem solid #6c757d;
+    color: black;
+    padding-right: 1rem;
+    font-size: 0.6rem;
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
@@ -1203,7 +1214,7 @@ footer .footer-bottom div {
 .btn-customize {
     background-color: #fff;
     border: 0.0625rem solid #6c757d;
-    color: #6c757d;
+    color: black;
     text-transform: uppercase;
     font-size: 0.6rem;
     letter-spacing: 0.05rem;
