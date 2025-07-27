@@ -5,7 +5,8 @@
     font-family: "Inter", sans-serif;
 }
 
-/* Navibar section */
+/* Navbar section 
+--------------------------------------------- */
 nav {
     background-color: white;
     color: black;
@@ -37,33 +38,78 @@ nav .logo .icon {
 }
 
 nav .dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav .dropdown-container {
     position: relative;
+    display: inline-block;
 }
 
-nav .dropdown .dropbtn {
+nav .dropbtn {
     background-color: white;
     color: black;
     padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
     border: none;
     border-radius: 0.625rem;
     cursor: pointer;
+    display: flex; 
+    align-items: center;
+    gap: 0.5rem; 
 }
 
-nav .dropdown .dropbtn:hover {
-    background-color: darkgrey;
+nav .dropbtn .icon-arrow-down {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.2s ease-in-out; 
 }
 
-nav .dropdown .links {
-    background-color: white;
+nav .dropdown-container:hover .dropbtn .icon-arrow-down {
+    transform: rotate(180deg);
+}
+
+nav .links {
     color: black;
     padding: 0.625rem 1.25rem;
-    border: none;
     border-radius: 0.625rem;
-    cursor: pointer;
+    text-decoration: none;
 }
 
-nav .dropdown .links:hover {
-    background-color: darkgrey;
+nav .dropbtn:hover,
+nav .links:hover {
+    background-color: #f0f0f0;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 10rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    border-radius: 0.5rem;
+    z-index: 100;
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
+}
+
+nav .dropdown-content a {
+    color: black;
+    padding: 0.75rem 1.25rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #f0f0f0;
+}
+
+nav .dropdown-container:hover .dropdown-content {
+    display: block;
 }
 
 nav .buttons {
@@ -124,7 +170,8 @@ nav .buttons .buynow:hover .buyicon {
     transition: transform 0.3s ease-out forwards;
 }
 
-/* Header Section */
+/* Header Section 
+--------------------------------------------- */
 header {
     background-image: url("../imgs/hero.png");
     background-color: #3d7a81;
@@ -211,7 +258,8 @@ header .headerbuttons button:hover {
     border: 0.0625rem solid #2b5a63;
 }
 
-/* Services Section */
+/* Services Section
+--------------------------------------------- */
 main .services {
     padding: 2.5rem;
 }
