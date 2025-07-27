@@ -8,14 +8,18 @@
 /* Navbar section 
 --------------------------------------------- */
 nav {
+    position: sticky;
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
     background-color: white;
     color: black;
     padding: 0.625rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.07); 
 }
-
 nav .logo {
     display: flex;
     align-items: center;
