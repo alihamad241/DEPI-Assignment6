@@ -174,9 +174,6 @@ nav .buttons .buynow:hover .buyicon {
     transition: transform 0.3s ease-out forwards;
 }
 
-/* Responsive Media Queries
---------------------------------------------- */
-
 @media (max-width: 992px) {
 
     nav {
@@ -417,6 +414,27 @@ main .services .all-services a:hover {
     text-decoration: underline;
 }
 
+@media (max-width: 992px) {
+    main .services .all-services {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    main .services {
+        padding: 2rem 1.5rem; 
+    }
+
+    main .services .all-services {
+        grid-template-columns: 1fr; 
+    }
+
+    main .services .all-services a {
+        justify-content: flex-start; 
+    }
+}
+
 /* Popular Projects Section
 --------------------------------------------- */
 .popular-projects {
@@ -539,6 +557,23 @@ main .services .all-services a:hover {
     font-size: 1rem;
 }
 
+@media (max-width: 992px) {
+
+    .popular-projects .promo-card {
+        display: none;
+    }
+
+    .popular-projects {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .popular-projects .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Home Projects Section
 --------------------------------------------- */
 .home-projects {
@@ -631,6 +666,57 @@ main .services .all-services a:hover {
     border-color: #333;
 }
 
+@media (max-width: 992px) {
+    
+    .home-projects {
+        padding: 2rem 1.5rem; 
+    }
+
+    .home-projects-grid {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        scroll-snap-type: x mandatory;
+        
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        
+        padding: 0 1.5rem 1rem;
+
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .home-projects-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .home-projects-grid .project-card {
+        flex: 0 0 85%;
+        scroll-snap-align: start;
+    }
+    
+    .carousel-pagination {
+        text-align: center; 
+        margin-top: 1rem;
+        padding-right: 0; 
+    }
+
+    .carousel-pagination .dot {
+        display: inline-block;
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #ccc;
+        margin: 0 0.25rem;
+    }
+/* color changing needs JS */
+    .carousel-pagination .dot.active {
+        background-color: #D85151;
+    }
+}
+
 /* Expert Advice Section
 --------------------------------------------- */
 .expert-advice {
@@ -702,6 +788,13 @@ main .services .all-services a:hover {
 .advice-date {
     font-size: 0.8125rem;
     color: #6c757d;
+}
+
+@media (max-width: 992px) {
+
+    .advice-grid {
+        grid-template-columns: 1fr; 
+    }
 }
 
 /* How It Works Section
