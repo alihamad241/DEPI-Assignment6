@@ -9,16 +9,16 @@
 --------------------------------------------- */
 nav {
     position: sticky;
-    top: 0; 
-    width: 100%; 
-    z-index: 1000; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     background-color: white;
     color: black;
     padding: 0.625rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.07); 
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.07);
 }
 nav .logo {
     display: flex;
@@ -61,15 +61,15 @@ nav .dropbtn {
     border: none;
     border-radius: 0.625rem;
     cursor: pointer;
-    display: flex; 
+    display: flex;
     align-items: center;
-    gap: 0.5rem; 
+    gap: 0.5rem;
 }
 
 nav .dropbtn .icon-arrow-down {
     width: 1rem;
     height: 1rem;
-    transition: transform 0.2s ease-in-out; 
+    transition: transform 0.2s ease-in-out;
 }
 
 nav .dropdown-container:hover .dropbtn .icon-arrow-down {
@@ -93,7 +93,7 @@ nav .dropdown-content {
     position: absolute;
     background-color: white;
     min-width: 10rem;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
     z-index: 100;
     padding: 0.5rem 0;
@@ -122,7 +122,7 @@ nav .buttons {
     align-items: center;
 }
 
-nav .buttons .theme_switcher{
+nav .buttons .theme_switcher {
     transition: transform 0.3s ease-in-out;
 }
 
@@ -131,12 +131,21 @@ nav .buttons .theme_switcher:hover {
 }
 
 @keyframes shake {
-    0% { transform: rotate(0deg); }
-    25% { transform: rotate(10deg); }
-    50% { transform: rotate(-10deg); }
-    75% { transform: rotate(10deg); }
-    100% { transform: rotate(0deg); }
-    
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 nav .buttons .account-btn:hover {
@@ -153,7 +162,6 @@ nav .buttons .buynow {
 
 nav .buttons .buynow:hover {
     background-color: #a83a3a;
-
 }
 
 nav .buttons .buynowtext {
@@ -175,14 +183,12 @@ nav .buttons .buynow:hover .buyicon {
 }
 
 @media (max-width: 992px) {
-
     nav {
         position: relative;
         justify-content: space-between;
     }
 
-
-    nav .dropdown{
+    nav .dropdown {
         display: none;
     }
 
@@ -192,7 +198,6 @@ nav .buttons .buynow:hover .buyicon {
         transform: translateX(-50%);
     }
 
-
     .menu-btn {
         display: block;
         background: none;
@@ -201,10 +206,8 @@ nav .buttons .buynow:hover .buyicon {
         padding: 0.5rem;
     }
 
-
-    
     .mobile-nav {
-        display: none; 
+        display: none;
         position: fixed;
         top: 0;
         left: 0;
@@ -325,33 +328,32 @@ header .headerbuttons button:hover {
 }
 @media (max-width: 760px) {
     header {
-        height: auto; 
-        padding: 2rem 1rem; 
+        height: auto;
+        padding: 2rem 1rem;
     }
 
     header h1 {
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
 
     header form {
-        flex-direction: column; 
-        max-width: 95%; 
+        flex-direction: column;
+        max-width: 95%;
         gap: 0.5rem;
     }
 
     header form .zipbox {
-        border-left: none; 
+        border-left: none;
         padding-left: 0;
-        border-top: 0.0625rem solid #eee; 
+        border-top: 0.0625rem solid #eee;
         padding-top: 0.5rem;
     }
 
     header .headerbuttons {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         gap: 0.5rem;
     }
 }
-
 
 /* Services Section
 --------------------------------------------- */
@@ -423,15 +425,15 @@ main .services .all-services a:hover {
 
 @media (max-width: 576px) {
     main .services {
-        padding: 2rem 1.5rem; 
+        padding: 2rem 1.5rem;
     }
 
     main .services .all-services {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     main .services .all-services a {
-        justify-content: flex-start; 
+        justify-content: flex-start;
     }
 }
 
@@ -558,7 +560,6 @@ main .services .all-services a:hover {
 }
 
 @media (max-width: 992px) {
-
     .popular-projects .promo-card {
         display: none;
     }
@@ -667,9 +668,8 @@ main .services .all-services a:hover {
 }
 
 @media (max-width: 992px) {
-    
     .home-projects {
-        padding: 2rem 1.5rem; 
+        padding: 2rem 1.5rem;
     }
 
     .home-projects-grid {
@@ -678,10 +678,10 @@ main .services .all-services a:hover {
         flex-wrap: nowrap;
         gap: 1rem;
         scroll-snap-type: x mandatory;
-        
+
         margin-left: -1.5rem;
         margin-right: -1.5rem;
-        
+
         padding: 0 1.5rem 1rem;
 
         scrollbar-width: none;
@@ -696,14 +696,14 @@ main .services .all-services a:hover {
         flex: 0 0 85%;
         scroll-snap-align: start;
     }
-    
-    .carousel-pagination {
-        text-align: center; 
+
+    .home-projects .carousel-pagination {
+        text-align: center;
         margin-top: 1rem;
-        padding-right: 0; 
+        padding-right: 0;
     }
 
-    .carousel-pagination .dot {
+    .home-projects .carousel-pagination .dot {
         display: inline-block;
         width: 0.5rem;
         height: 0.5rem;
@@ -711,9 +711,9 @@ main .services .all-services a:hover {
         background-color: #ccc;
         margin: 0 0.25rem;
     }
-/* color changing needs JS */
-    .carousel-pagination .dot.active {
-        background-color: #D85151;
+    /* color changing needs JS */
+    .home-projects .carousel-pagination .dot.active {
+        background-color: #d85151;
     }
 }
 
@@ -791,9 +791,8 @@ main .services .all-services a:hover {
 }
 
 @media (max-width: 992px) {
-
     .advice-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 }
 
@@ -856,11 +855,9 @@ main .services .all-services a:hover {
     line-height: 1.5;
 }
 
-
 @media (max-width: 768px) {
-
     .how-it-works {
-        padding: 2rem 1.5rem; 
+        padding: 2rem 1.5rem;
     }
 
     .how-it-works .steps-container {
@@ -869,10 +866,10 @@ main .services .all-services a:hover {
         flex-wrap: nowrap;
         gap: 1rem;
         scroll-snap-type: x mandatory;
-        
+
         margin-left: -1.5rem;
         margin-right: -1.5rem;
-        
+
         padding: 0 1.5rem 1rem;
 
         scrollbar-width: none;
@@ -887,14 +884,14 @@ main .services .all-services a:hover {
         flex: 0 0 85%;
         scroll-snap-align: start;
     }
-    
-    .carousel-pagination {
-        text-align: center; 
+
+    .how-it-works .carousel-pagination {
+        text-align: center;
         margin-top: 1rem;
-        padding-right: 0; 
+        padding-right: 0;
     }
 
-    .carousel-pagination .dot {
+    .how-it-works .carousel-pagination .dot {
         display: inline-block;
         width: 0.5rem;
         height: 0.5rem;
@@ -902,18 +899,15 @@ main .services .all-services a:hover {
         background-color: #ccc;
         margin: 0 0.25rem;
     }
-/* color changing needs JS */
-    .carousel-pagination .dot.active {
-        background-color: #D85151;
+    /* color changing needs JS */
+    .how-it-works .carousel-pagination .dot.active {
+        background-color: #d85151;
     }
 }
 
-
-
-
 /* CTA Section
 --------------------------------------------- */
-.grow{
+.grow {
     position: relative;
     width: 100%;
     display: block;
@@ -924,7 +918,7 @@ main .services .all-services a:hover {
     width: 100%;
     display: flex;
     min-height: 30rem;
-    background-color: #3D7A81; 
+    background-color: #3d7a81;
     color: #fff;
     position: absolute;
 }
@@ -939,7 +933,7 @@ main .services .all-services a:hover {
 
 .cta-image {
     flex-basis: 50%;
-    background-image: url('../imgs/become-pro-cta.jpg');
+    background-image: url("../imgs/become-pro-cta.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -947,7 +941,7 @@ main .services .all-services a:hover {
 .cta-content h2 {
     font-size: 2rem;
     font-weight: 600;
-    line-height: 1.4; 
+    line-height: 1.4;
     margin: 0 0 2rem 0;
     max-width: 31.25rem;
 }
@@ -971,13 +965,12 @@ main .services .all-services a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-
 .cta-buttons .btn-primary {
-    background-color: #D85151;
+    background-color: #d85151;
     color: white;
 }
 .cta-buttons .btn-primary:hover {
-    background-color: #A83A3A;
+    background-color: #a83a3a;
 }
 
 .cta-buttons .btn-primary span {
@@ -1075,24 +1068,23 @@ main .services .all-services a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #D85151
+    background-color: #d85151;
 }
 
 @media (max-width: 768px) {
-
     .cta-image,
     .decorative-circle-container {
         display: none;
     }
 
     .cta-content {
-        flex-basis: 100%; 
+        flex-basis: 100%;
         text-align: center;
         align-items: center;
     }
 
     .cta-content h2 {
-        max-width: none; 
+        max-width: none;
     }
 
     .cta-buttons {
@@ -1103,14 +1095,14 @@ main .services .all-services a:hover {
 /* Get App Section
 --------------------------------------------- */
 .get-app-section {
-    padding: 5rem 2.5rem; 
+    padding: 5rem 2.5rem;
 }
 
 .get-app-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FBEEEE;
+    background-color: #fbeeee;
     border-radius: 1rem;
     padding: 0 0 0 3.75rem;
     overflow: hidden;
@@ -1159,7 +1151,7 @@ main .services .all-services a:hover {
 }
 
 .app-image img {
-    max-width: 31.25rem; 
+    max-width: 31.25rem;
     display: block;
 }
 
@@ -1271,16 +1263,14 @@ main .services .all-services a:hover {
 }
 
 @media (max-width: 992px) {
-
     .pricing-grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 576px) {
-
     .pricing-card {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .pricing-card img {
@@ -1297,12 +1287,12 @@ footer {
     padding: 3.75rem 2.5rem;
 }
 
-footer .footer-top{
+footer .footer-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 0 2.5rem 2.5rem ;
+    padding: 0 2.5rem 2.5rem;
 }
 
 footer .footer-top .logo {
@@ -1311,8 +1301,8 @@ footer .footer-top .logo {
     font-size: 1.25rem;
 }
 
-footer .footer-top .logo i{
-    color: #fff; 
+footer .footer-top .logo i {
+    color: #fff;
     padding-right: 0.625rem;
 }
 
@@ -1323,7 +1313,7 @@ footer .footer-top .logo span {
 }
 
 footer .footer-top .logo button {
-    background-color: #D85151;
+    background-color: #d85151;
     color: #fff;
     padding: 0.625rem 1.25rem;
     border: none;
@@ -1332,7 +1322,7 @@ footer .footer-top .logo button {
 }
 
 footer .footer-top .logo button:hover {
-    background-color: #A83A3A;
+    background-color: #a83a3a;
 }
 
 footer .footer-top .help span {
@@ -1341,7 +1331,7 @@ footer .footer-top .help span {
 }
 
 footer .footer-top .help a {
-    color: #FFF;
+    color: #fff;
     padding-right: 0.625rem;
     font-weight: bold;
     text-decoration: none;
@@ -1395,7 +1385,7 @@ footer .footer-links .left-side .social-icons {
     gap: 0.9375rem;
 }
 
-footer .footer-links .left-side .social-icons .logo i{
+footer .footer-links .left-side .social-icons .logo i {
     width: 0.9375rem;
     height: 0.9375rem;
     display: flex;
@@ -1403,7 +1393,7 @@ footer .footer-links .left-side .social-icons .logo i{
     align-items: center;
 }
 
-footer .footer-links .left-side .social-icons .logo{
+footer .footer-links .left-side .social-icons .logo {
     color: #fff;
     border-radius: 50%;
     padding: 0.625rem;
@@ -1411,7 +1401,7 @@ footer .footer-links .left-side .social-icons .logo{
     text-decoration: none;
 }
 
-footer .footer-links .left-side .social-icons .logo:hover{
+footer .footer-links .left-side .social-icons .logo:hover {
     background-color: rgba(125, 123, 123, 0.561);
 }
 footer .footer-links .right-side {
@@ -1425,32 +1415,29 @@ footer .footer-links .right-side .list2 {
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
-
 }
 
 footer .footer-links .right-side .list1 ul,
 footer .footer-links .right-side .list2 ul {
     list-style: none;
     padding: 0;
-    max-height: calc(6 * 1.5em); 
+    max-height: calc(6 * 1.5em);
     display: flex;
     flex-direction: column;
     gap: 0.3125rem;
     flex-wrap: wrap;
 }
 
-footer .footer-links .right-side a{
+footer .footer-links .right-side a {
     text-decoration: none;
     color: #ccc;
     padding-right: 1.875rem;
     font-size: 0.875rem;
-
 }
 
 footer .footer-links .right-side a:hover {
     text-decoration: underline;
 }
-
 
 footer .footer-cities {
     text-align: left;
@@ -1470,7 +1457,7 @@ footer .footer-cities ul {
     display: flex;
     gap: 0.625rem;
     list-style: none;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
     padding-left: 1.25rem;
 }
 
@@ -1489,7 +1476,7 @@ footer .footer-cities ul li:hover {
     border-color: #fff;
 }
 
-footer .footer-bottom{
+footer .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1515,13 +1502,10 @@ footer .footer-bottom div {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
 
-@media (max-width: 576px) {
-    footer .footer-top {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .right-side ul li a {
+        font-size: smaller;
+        max-width: 20%;
     }
     footer .footer-links {
         flex-direction: column;
@@ -1531,6 +1515,14 @@ footer .footer-bottom div {
     footer .footer-links .left-side,
     footer .footer-links .right-side {
         max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .footer-top {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
 
@@ -1544,17 +1536,15 @@ footer .footer-bottom div {
         text-align: left;
     }
 
-    footer .footer-links .right-side ul li{
+    footer .footer-links .right-side ul li {
         display: none;
     }
-
 
     .footer-bottom {
         flex-direction: column-reverse;
         align-items: center;
         text-align: center;
     }
-    
 }
 
 /* Floating Buttons
@@ -1573,22 +1563,30 @@ footer .footer-bottom div {
 }
 
 @keyframes rotate-cw {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes slide-up {
-    from { transform: translateY(0); }
-    to { transform: translateY(-0.25rem); }
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-0.25rem);
+    }
 }
 
 .floating-buttons {
     position: fixed;
     top: 50%;
-    right: 0; 
+    right: 0;
     padding: 0.5rem;
     transform: translateY(-50%);
-    z-index: 1050; 
+    z-index: 1050;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1603,18 +1601,18 @@ footer .footer-bottom div {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.2rem; 
-    border-radius: 50rem; 
-    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,.075);
+    padding: 0.2rem;
+    border-radius: 50rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     text-decoration: none;
-    font-size: 0.5rem; 
+    font-size: 0.5rem;
     font-weight: 500;
     white-space: nowrap;
 }
 
 .floating-buttons a i {
-    width: 0.875rem; 
-    height: 0.875rem; 
+    width: 0.875rem;
+    height: 0.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
