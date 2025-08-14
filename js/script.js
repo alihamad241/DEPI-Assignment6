@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.querySelector(".menu-btn");
-    const mobileMenu = document.querySelector(".nav-mobile-menu");
     const closeMenuBtn = document.querySelector(".close-mobile-menu");
     const overlay = document.querySelector(".offcanvas-overlay");
 
@@ -12,6 +11,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (closeMenuBtn) closeMenuBtn.addEventListener("click", toggleMenu);
     if (overlay) overlay.addEventListener("click", toggleMenu);
 
+
+
+    const customizerBtn = document.querySelector(".btn-customize");
+    const customizerCloseBtn = document.querySelector(".customizer-panel .btn-close");
+    const customizerOverlay = document.querySelector(".customizer-overlay");
+
+    const toggleCustomizer = () => {
+        document.body.classList.toggle("customizer-open");
+    };
+
+    if (customizerBtn) {
+        customizerBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            toggleCustomizer();
+        });
+    }
+    if (customizerCloseBtn) {
+        customizerCloseBtn.addEventListener("click", toggleCustomizer);
+    }
+    if (customizerOverlay) {
+        customizerOverlay.addEventListener("click", toggleCustomizer);
+    }
     const themeSwitcher = document.querySelector('.theme_switcher');
     
     if (themeSwitcher) {
