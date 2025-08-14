@@ -124,11 +124,137 @@ nav .buttons {
 
 nav .buttons .theme_switcher {
     transition: transform 0.3s ease-in-out;
+    position: relative;
 }
 
 nav .buttons .theme_switcher:hover {
     transform: scale(1.1);
 }
+
+.theme-dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 0.75rem;
+    min-width: 9rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+    z-index: 1010;
+    padding: 0.5rem;
+}
+
+.theme-dropdown.show {
+    display: block;
+}
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    color: #343a40;
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.theme-option:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+.theme-option .theme-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.theme-option .icon-checkmark {
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto; /* Pushes the checkmark to the far right */
+}
+
+.nav-mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 18.75rem; /* 300px */
+    max-width: 90%;
+    height: 100%;
+    background-color: var(--body-bg, #fff);
+    z-index: 1050;
+    padding: 1rem;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nav-links-mobile a {
+    color: var(--text-color, #343a40);
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.nav-links-mobile a:hover {
+    background-color: #f0f0f0;
+}
+
+.nav-mobile-menu .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-mobile-menu {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+    color: var(--text-muted, #6c757d);
+}
+
+/* Overlay for the background */
+.offcanvas-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1040;
+}
+
+
+/* Open states, toggled by JavaScript */
+body.mobile-nav-open .offcanvas-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+body.mobile-nav-open .nav-mobile-menu {
+    transform: translateX(0);
+}
+
 
 @keyframes shake {
     0% {
@@ -1657,4 +1783,147 @@ footer .footer-bottom div {
 
 .btn-customize:hover .icon-settings {
     transform: rotate(180deg);
+}
+
+/* ===================================================================
+    Dark Theme Styles
+=================================================================== */
+.dark-theme {
+    /* Base Colors */
+    --body-bg: #1e212c; /* Main dark background */
+    --surface-bg: #2a2f3c; /* Lighter background for sections/cards */
+    --heading-color: #ffffff;
+    --text-color: #e5e7eb;
+    --text-muted: #a3a9b9;
+    --border-color: #3d4452;
+}
+
+/* --- General Body & Text --- */
+.dark-theme body,
+.dark-theme main {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme .logo_text,
+.dark-theme .dropbtn,
+.dark-theme .links {
+    color: var(--heading-color);
+}
+
+.dark-theme p {
+    color: var(--text-muted);
+}
+
+/* --- Navbar & Menus --- */
+.dark-theme nav,
+.dark-theme .offcanvas-menu,
+.dark-theme .dropdown-content,
+.dark-theme .theme-dropdown {
+    background-color: #1a1f2b;
+    border-color: var(--border-color);
+}
+
+.dark-theme nav .logo .logo_text {
+    color: var(--heading-color);
+}
+
+.dark-theme nav .dropbtn{
+    background-color: var(--body-bg);
+}
+
+.dark-theme nav .dropbtn:hover,
+.dark-theme nav .links:hover,
+.dark-theme .dropdown-content a:hover {
+    background-color: #3d4452;
+}
+.dark-theme .menu-btn {
+    border-color: var(--border-color);
+    color: var(--heading-color);
+}
+.dark-theme nav .account_btn svg path,
+.dark-theme nav .theme_switcher svg path {
+    stroke: var(--heading-color);
+}
+
+
+/* --- Header --- */
+.dark-theme header form input {
+    color: #fff;
+}
+.dark-theme header form input::placeholder {
+    color: var(--text-muted);
+}
+.dark-theme header .headerbuttons button {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.dark-theme header .headerbuttons button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+}
+
+
+/* --- Sections & Cards --- */
+.dark-theme .services,
+.dark-theme .popular-projects,
+.dark-theme .home-projects,
+.dark-theme .expert-advice,
+.dark-theme .how-it-works,
+.dark-theme .get-app-section,
+.dark-theme .pricing-references {
+    background-color: var(--body-bg);
+    border-top-color: var(--border-color);
+}
+
+/* Card-specific overrides */
+.dark-theme .project-card,
+.dark-theme .pricing-card,
+.dark-theme .promo-card {
+    background-color: var(--body-bg);
+    border-color: var(--border-color);
+}
+
+.dark-theme .services .all-services a .icon {
+    background-color: var(--surface-bg);
+    border-color: var(--border-color);
+}
+.dark-theme .services .all-services a .icon svg,
+.dark-theme .services .all-services a .text {
+    color: var(--text-muted);
+}
+
+.dark-theme .btn-book {
+    border-color: var(--text-muted);
+    color: var(--text-color);
+}
+.dark-theme .btn-book:hover {
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    color: var(--dark-color);
+}
+
+.dark-theme .how-it-works .step-icon svg{
+    color: var(--text-muted);
+}
+
+/* --- Floating Buttons --- */
+.dark-theme .floating-buttons a {
+    background-color: #3d4452;
+    border-color: var(--text-muted);
+    color: #fff;
+}
+
+/* --- Customizer --- */
+.dark-theme .customizer-panel {
+    background-color: #1a1f2b;
+}
+
+/* --- Footer --- */
+.dark-theme footer {
+    background-color: var(--dark-color);
 }
