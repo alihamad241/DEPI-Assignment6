@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const themeDropdown = themeSwitcher.querySelector(".theme-dropdown");
 
         themeBtn.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent link from navigating
+            event.preventDefault(); 
             themeDropdown.classList.toggle("show");
         });
 
@@ -55,8 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkmarkIconHTML = `<svg class="icon-checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>`;
 
     /**
-     * Applies the selected theme to the document.
-     * @param {string} theme - The theme to apply ('light', 'dark', or 'auto').
+     * @param {string} theme
      */
     const applyTheme = (theme) => {
         const isSystemDark = window.matchMedia(
@@ -71,8 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     /**
-     * Updates the UI of the dropdown to reflect the active theme.
-     * @param {string} activeTheme - The currently active theme.
+     * @param {string} activeTheme 
      */
     const updateUI = (activeTheme) => {
         themeOptions.forEach((option) => {
@@ -123,17 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const primaryColorInput = document.getElementById("color-primary");
     const primaryColorHexSpan = document.querySelector(
         ".color-input-wrapper span"
-    ); // More specific selector
+    ); 
     const root = document.documentElement;
 
-    // 1. Function to apply a saved color on page load
     const loadPrimaryColor = () => {
         const savedColor = localStorage.getItem("primaryColor");
         if (savedColor) {
-            // Apply the saved color to the CSS variable
             root.style.setProperty("--primary-color", savedColor);
 
-            // Update the color picker and hex code display to match
             primaryColorInput.value = savedColor;
             primaryColorHexSpan.textContent = savedColor;
         }
@@ -155,6 +150,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 3. Load the saved color when the page loads
     loadPrimaryColor();
 });
