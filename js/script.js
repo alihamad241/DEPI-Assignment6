@@ -119,4 +119,42 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
     initializeTheme();
+
+    const primaryColorInput = document.getElementById("color-primary");
+    const primaryColorHexSpan = document.querySelector(
+        ".color-input-wrapper span"
+    ); // More specific selector
+    const root = document.documentElement;
+
+    // 1. Function to apply a saved color on page load
+    const loadPrimaryColor = () => {
+        const savedColor = localStorage.getItem("primaryColor");
+        if (savedColor) {
+            // Apply the saved color to the CSS variable
+            root.style.setProperty("--primary-color", savedColor);
+
+            // Update the color picker and hex code display to match
+            primaryColorInput.value = savedColor;
+            primaryColorHexSpan.textContent = savedColor;
+        }
+    };
+
+    // 2. Add an event listener to the color picker
+    if (primaryColorInput) {
+        primaryColorInput.addEventListener("input", (event) => {
+            const newColor = event.target.value;
+
+            // Update the CSS variable in real-time
+            root.style.setProperty("--primary-color", newColor);
+
+            // Update the hex code display
+            primaryColorHexSpan.textContent = newColor;
+
+            // Save the new color to localStorage
+            localStorage.setItem("primaryColor", newColor);
+        });
+    }
+
+    // 3. Load the saved color when the page loads
+    loadPrimaryColor();
 });
